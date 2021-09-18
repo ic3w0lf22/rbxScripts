@@ -18,7 +18,7 @@ while not InputService:IsKeyDown'F' do
 
         if Button.Name ~= Name then
             Choices.ChildAdded:Wait()
-            task.wait(0.05)
+            task.wait(0.1)
         else
             break
         end
