@@ -11,7 +11,7 @@ while not InputService:IsKeyDown'F' do
 
     mousemoverel(Position.X - Mouse.X, Position.Y - Mouse.Y)
 
-    task.wait(0.05)
+    task.wait(0.1)
 
     if (Vector2.new(Mouse.X, Mouse.Y) - Position).Magnitude < 10 then
         mouse1click()
