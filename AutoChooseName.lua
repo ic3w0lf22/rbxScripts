@@ -11,14 +11,14 @@ while not InputService:IsKeyDown'F' do
 
     mousemoverel(Position.X - Mouse.X, Position.Y - Mouse.Y)
 
-    task.wait()
+    task.wait(0.05)
 
     if (Vector2.new(Mouse.X, Mouse.Y) - Position).Magnitude < 10 then
         mouse1click()
 
         if Button.Name ~= Name then
             Choices.ChildAdded:Wait()
-            task.wait(0.04)
+            task.wait(0.05)
         else
             break
         end
